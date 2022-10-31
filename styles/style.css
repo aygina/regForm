@@ -13,12 +13,11 @@
     height: 84vh;
     padding-left: 40px;
     padding-right: 40px;
-    gap:1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20vh 1fr;
     font-family: 'Roboto', sans-serif;
-
+    border-color: #232323;
 }
 
 h2 {
@@ -27,33 +26,79 @@ h2 {
 
 
 .logo {
+    padding-left: 10px;
+    padding-right: 10px;
     grid-row: 1/2;
-    grid-column: 1/3;
-    /* background-color: bisque; */
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
 }
 
 .page__form {
     grid-row: 2/3;
     grid-column: 1/2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    justify-content: baseline;
     font-size: 0.8em;
-    /* background-color: lightblue; */
+    gap: 1em;
 }
+
+
 
 .form__fullName,
 .form__passwordInputs {
     display: flex;
     flex-wrap: nowrap;
-
+    gap: 1em;
 }
 
 .page__acc {
-    grid-row: 2/3;
+    grid-row: 1/3;
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: pink; */
+    justify-content: center;
+    font-size: 1.2rem;
 }
+
+input[type=text] {
+    display: block;
+    width: 95%;
+    height: calc(2rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+}
+
+input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+label {
+    font-size: 1rem;
+}
+
+button {
+    background: #1e3cd2dd;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    width: 302px;
+    height: 36px;
+    margin-top: 10px;
