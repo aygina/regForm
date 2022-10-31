@@ -96,9 +96,10 @@ button {
     border: 1px solid #bdbdbd;
     border-radius: 0.25rem;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.15em;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     width: 302px;
     height: 36px;
     margin-top: 10px;
+}
