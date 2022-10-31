@@ -10,7 +10,7 @@
 }
 
 .page {
-    height: 84vh;
+    height: 70vh;
     padding-left: 40px;
     padding-right: 40px;
     display: grid;
@@ -23,7 +23,6 @@
 h2 {
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .logo {
     padding-left: 10px;
