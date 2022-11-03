@@ -20,8 +20,6 @@ function check() {
         alert("Добро пожаловать!");
 }
 
-console.log(passLength)
-
 function showPass() {
     let pass = document.getElementById("password");
     let passConf = document.getElementById("passwordConf");
