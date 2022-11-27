@@ -118,3 +118,8 @@ button {
     height: 36px;
     margin-top: 10px;
 }
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}

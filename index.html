@@ -38,13 +38,14 @@
                         <div class="form__passwordInputs">
                             <input type="password" name="password" id="password" placeholder="Пароль">
                             <input type="password" name="passwordConf" id="passwordConf" placeholder="Подтвердить"></div>
-                        <p>&nbsp;Пароль должен содержать не менее восьми знаков, включать буквы, цифры и специальные
-                            символы
+                        <p>&nbsp;Пароль должен содержать не менее восьми знаков, включать латинские буквы, цифры и специальные
+                            символы !"#$%&'()*+,-./
                         </p>
                         <input type="checkbox" id="showPass" name="showPass" onclick="showPass()">
                         <label for="showPass">Показать пароль</label>
                     </div>
-                    <button id="submit" onclick="check();">Далее</button>
+                    <button id="submit" onclick="validatePass();">Далее</button>
+                    <div id="errorsInfo"></div>
                 </div>
                 <div class="page__acc">
                     <img src="images/account.svg" alt="account" width="50%">
