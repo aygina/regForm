@@ -1,14 +1,13 @@
-
 let errors = [];
 
-function checkAll() {
+postButton.onclick = function() {
     validateText();
     validateEmail();
     validatePass();
 
     document.getElementById('errorsInfo').style.color = 'black';
     document.getElementById('errorsInfo').innerHTML = errors.join('!<br>');
-    
+
     if (errors.length === 0) {
         document.getElementById('errorsInfo').style.color = 'green';
         document.getElementById('errorsInfo').innerHTML = 'Сохранено!';

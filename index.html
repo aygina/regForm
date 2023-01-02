@@ -20,6 +20,7 @@
 <body>
     <div class="wrapper">
         <main>
+        <form>
             <div class="page">
                 <div class="logo">
                     <img src="images/logo.svg" name="logo" width="25%">
@@ -44,7 +45,7 @@
                         <input type="checkbox" id="showPass" name="showPass" onclick="showPass()">
                         <label for="showPass">Показать пароль</label>
                     </div>
-                    <button id="submit" onclick="checkAll();">Далее</button>
+                    <button type="submit" id="postButton" onclick="checkAll();">Далее</button>
                     <div id="errorsInfo"></div>
                 </div>
                 <div class="page__acc">
@@ -52,9 +53,11 @@
                     <p>Один аккаунт – для всех сервисов Google.</p>
                 </div>
             </div>
-        </main>
+        </form>
+    </main>
     </div>
-    <script src="index.js"></script>
+    <script src="/scripts/json.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>
