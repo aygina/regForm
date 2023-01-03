@@ -1,6 +1,8 @@
 let errors = [];
 
-postButton.onclick = function() {
+postButton.addEventListener("click", checkAll);
+
+function checkAll() {
     validateText();
     validateEmail();
     validatePass();
@@ -60,7 +62,7 @@ function validatePass() {
     }
 }
 
-function showPass() {
+showPass.onclick = function showPass() {
     let pass = document.getElementById("password");
     let passConf = document.getElementById("passwordConf");
 

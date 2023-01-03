@@ -8,18 +8,16 @@ postButton.onclick = function (event) {
         password: document.getElementById("password").value
     }
 
-    fetch("https://httpbin.org/post",
-    {
-        method: 'POST',
-        body: JSON.stringify(user),
-        headers: {
-            'Content-Type': 'application/json; charset=utf-8'
-        },
-    })
-    .then(res => res.json())
-    .then(user => {
-        console.log(user);
-    })
-    .catch(error => console.log(error));
-    console.log(user.name, user.surname, user.email, user.password);
+    fetch("https://httpbin.org/post", {
+            method: 'POST',
+            body: JSON.stringify(user),
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            },
+        })
+        .then(res => res.json())
+        .then(user => {
+            console.log(user);
+        })
+        .catch(error => console.log(error));
 }
